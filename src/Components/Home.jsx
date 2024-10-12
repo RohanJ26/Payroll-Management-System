@@ -89,12 +89,12 @@ const Home = () => {
             className="flex justify-between items-center cursor-pointer text-black"
             onClick={() => toggleFAQ(2)}
           >
-            <h4 className="text-lg font-medium">How can I insert new data?</h4>
+            <h4 className="text-lg font-medium">How can I search for an employee's details?</h4>
             <span>{openFAQ === 2 ? '▲' : '▼'}</span>
           </div>
           {openFAQ === 2 && (
             <p className="mt-2 text-gray-600">
-              Go to the Insert page and fill in the required information.
+              To search for an employee, go to the search page, and you can search using either the employee ID or employee name.
             </p>
           )}
         </div>
@@ -105,12 +105,12 @@ const Home = () => {
             className="flex justify-between items-center cursor-pointer text-black"
             onClick={() => toggleFAQ(3)}
           >
-            <h4 className="text-lg font-medium">How can I update existing data?</h4>
+            <h4 className="text-lg font-medium">How can I insert new employee's details?</h4>
             <span>{openFAQ === 3 ? '▲' : '▼'}</span>
           </div>
           {openFAQ === 3 && (
             <p className="mt-2 text-gray-600">
-              Go to the Update page, search for the record, and modify the details.
+              Go to the Insert page and fill in the required information.
             </p>
           )}
         </div>
@@ -121,10 +121,26 @@ const Home = () => {
             className="flex justify-between items-center cursor-pointer text-black"
             onClick={() => toggleFAQ(4)}
           >
-            <h4 className="text-lg font-medium">How can I delete data?</h4>
+            <h4 className="text-lg font-medium">How can I update existing employee's details?</h4>
             <span>{openFAQ === 4 ? '▲' : '▼'}</span>
           </div>
           {openFAQ === 4 && (
+            <p className="mt-2 text-gray-600">
+              Go to the Update page, search for the record, and modify the details.
+            </p>
+          )}
+        </div>
+
+        {/* Question 5 */}
+        <div className="border border-gray-300 rounded-lg p-4 shadow-sm bg-gray-50">
+          <div 
+            className="flex justify-between items-center cursor-pointer text-black"
+            onClick={() => toggleFAQ(5)}
+          >
+            <h4 className="text-lg font-medium">How can I delete employee's details?</h4>
+            <span>{openFAQ === 5 ? '▲' : '▼'}</span>
+          </div>
+          {openFAQ === 5 && (
             <p className="mt-2 text-gray-600">
               Go to the Delete page and select the record you want to remove.
             </p>
