@@ -2,7 +2,7 @@ import React from 'react';
 
 const InsertEmployee = () => {
   return (
-    <div className="p-8 bg-gray-100 min-h-screen">
+    <div className="p-8 pt-12 bg-gray-100 min-h-screen">
       <div className="container mx-auto bg-white p-6 rounded-lg shadow-md max-w-md">
         <h2 className="text-center text-2xl font-bold text-blue-700 mb-4">Add Employee Record</h2>
         <form action="/add_employee" method="POST">
